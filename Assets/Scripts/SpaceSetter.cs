@@ -10,17 +10,17 @@ public class SpaceSetter : MonoBehaviour
 
     Skybox _skybox;
 
-    private void Awake()
+    void Awake()
     {
         _skybox = GetComponent<Skybox>();
     }
 
-    private void OnEnable()
+    void OnEnable()
     {
         AddSkybox(0);
     }
 
-    private void AddSkybox(int skybox)
+    void AddSkybox(int skybox)
     {
         if (_skybox != null && skybox <= _spaceMaterials.Count && skybox >= 0)
         {
