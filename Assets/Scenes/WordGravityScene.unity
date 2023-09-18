@@ -517,7 +517,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1793841462}
-  - component: {fileID: 1793841461}
   - component: {fileID: 1793841460}
   m_Layer: 0
   m_Name: Letters
@@ -565,18 +564,6 @@ MonoBehaviour:
   - {fileID: 8921241899957624569, guid: b2c6ec12e3f21e74bb3ec2567ea68348, type: 3}
   - {fileID: 7531942318978638426, guid: fd68bf9733e4372478a78c989584cf23, type: 3}
   - {fileID: 7249069476749392151, guid: ed0c3cc469ddaf043a762c7a9dfe1e16, type: 3}
---- !u!114 &1793841461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1793841459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aeda68c804d044a43823f793e948cc37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1793841462
 Transform:
   m_ObjectHideFlags: 0
