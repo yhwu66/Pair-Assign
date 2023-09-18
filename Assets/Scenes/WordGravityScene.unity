@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18029505, g: 0.22572652, b: 0.30692935, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -507,6 +507,90 @@ Transform:
   - {fileID: 795957099}
   m_Father: {fileID: 0}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1793841459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1793841462}
+  - component: {fileID: 1793841461}
+  - component: {fileID: 1793841460}
+  m_Layer: 0
+  m_Name: Letters
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1793841460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793841459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8135cf6231c84898857c653a14570ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPrefab:
+  - {fileID: 3938644703844863033, guid: 91209a372b7fc4f448b95698dc6b7802, type: 3}
+  - {fileID: 3963210939059071276, guid: 7b7edb913cc0428429b03967cda6ab2e, type: 3}
+  - {fileID: 6469987287383335521, guid: 06ccafa2eda62ec4694bb7bd1bb4a2a8, type: 3}
+  - {fileID: 3110403790976160781, guid: fd41af98c7ac0354aa26cc90e0a11c90, type: 3}
+  - {fileID: 2743867516104618542, guid: 4a630794db6597a4fbbdaec2030894eb, type: 3}
+  - {fileID: 993722256325647027, guid: 73a73335f2dbc5d4590c8a869b592581, type: 3}
+  - {fileID: 8312990376492006281, guid: 2879e632b48b3674091e986ccebe9896, type: 3}
+  - {fileID: 2728355139828275146, guid: bffeccdfc1f6af2479c3fb5ae25a7a3c, type: 3}
+  - {fileID: 3289291372543105937, guid: d83bd11307a702e45ab4229d6cf7f2e6, type: 3}
+  - {fileID: 2162018411972415860, guid: d0bc46ad35634d34f8d6280595873255, type: 3}
+  - {fileID: 8389451911963074367, guid: 786ead5c4fac4df4ba0d76a6620a45ef, type: 3}
+  - {fileID: 650457855310671273, guid: 2771227f84a5e8a479a4b3eb7d8487c8, type: 3}
+  - {fileID: 6768242648231538417, guid: 42e30e515438b38498a775c02a85b1d6, type: 3}
+  - {fileID: 3540361693896205872, guid: 15c02febf879d4f4b8ca1fd40d4a000e, type: 3}
+  - {fileID: 7994838659834929764, guid: 1564adee95e00084eb43ff676b3ac55c, type: 3}
+  - {fileID: 5202417467709352398, guid: 49843d260df35f24eaaac8bad6a3f7f9, type: 3}
+  - {fileID: 3966314704721474249, guid: 9ea304b07a0f5304d928bae0472c8252, type: 3}
+  - {fileID: 7958084230275409644, guid: 4713f8b7aa947034996daff97f6f9964, type: 3}
+  - {fileID: 437001657706810545, guid: 02625b5863105d44bacdcb40a5aacc55, type: 3}
+  - {fileID: 3667101195100832896, guid: dcfcd4c3b64007140b776429bd61c343, type: 3}
+  - {fileID: 6504252911019470712, guid: d5763bcd6f0b5884ca1e026fe04b26d1, type: 3}
+  - {fileID: 799878288945735614, guid: 40b9327ef3c79a446a63868179d19ac3, type: 3}
+  - {fileID: 6731378877313095887, guid: 29a95acd63daed649934e28d5e353663, type: 3}
+  - {fileID: 8921241899957624569, guid: b2c6ec12e3f21e74bb3ec2567ea68348, type: 3}
+  - {fileID: 7531942318978638426, guid: fd68bf9733e4372478a78c989584cf23, type: 3}
+  - {fileID: 7249069476749392151, guid: ed0c3cc469ddaf043a762c7a9dfe1e16, type: 3}
+--- !u!114 &1793841461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793841459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeda68c804d044a43823f793e948cc37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1793841462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793841459}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1900867127 stripped
 Transform:
