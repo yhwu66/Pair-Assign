@@ -170,7 +170,6 @@ MonoBehaviour:
   words:
   - cat
   - dog
-  - mouse
   currentWordIndex: 0
 --- !u!1 &57778049
 GameObject:
