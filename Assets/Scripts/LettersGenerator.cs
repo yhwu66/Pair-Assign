@@ -8,20 +8,25 @@ public class LettersGenerator : MonoBehaviour
 {
     
     public GameObject[] objectPrefab;  // Prefab to be instantiated
+    public WordManager wordManager;
 
-    private string[] words = new[] { "cat", "dog", "mouse" };
+    
     private List<GameObject> letters = new List<GameObject>();
+    private float range = 20f;
+    private float scale = 2f;
 
     void Start()
     {
+        List<string> words = wordManager.words;
         foreach (string word in words)
         {
             foreach (char c in word)
             {
-                float randomX = Random.Range(-100f, 100f);  // Adjust the range as needed
-                float randomY = Random.Range(-100f, 100f);    // Adjust the range as needed
+                float randomX = Random.Range(-range, range); 
+                float randomY = Random.Range(-range, range); 
+                float randomZ = Random.Range(-range, range);
             
-                Vector3 spawnPosition = new Vector3(randomX, randomY, 0);
+                Vector3 spawnPosition = new Vector3(randomX, randomY, randomZ);
                 int index = c - 'a';
                 
                 float randomRotationX = Random.Range(0f, 360f);
@@ -30,6 +35,8 @@ public class LettersGenerator : MonoBehaviour
                 Quaternion rotation = Quaternion.Euler(randomRotationX, randomRotationY, randomRotationZ);
                 
                 GameObject newLetter = Instantiate(objectPrefab[index], spawnPosition, rotation);
+                Vector3 spawnScale = new Vector3(scale, scale, scale);
+                newLetter.transform.localScale = spawnScale;
                 newLetter.tag = "letter_"+c;
                 letters.Add(newLetter);
             }
