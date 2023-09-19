@@ -13,7 +13,7 @@ public class LettersGenerator : MonoBehaviour
     
     private List<GameObject> letters = new List<GameObject>();
     private float range = 20f;
-    private float scale = 2f;
+    private float scale = 4f;
 
     void Start()
     {
