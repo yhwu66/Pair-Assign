@@ -358,7 +358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5931547164075623444, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
       propertyPath: m_fontSize
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5931547164075623444, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
       propertyPath: m_fontStyle
@@ -366,7 +366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5931547164075623444, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
       propertyPath: m_fontSizeBase
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5931547164075623444, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
       propertyPath: m_TextStyleHashCode
@@ -434,11 +434,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5931547165079564711, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 419.3782
       objectReference: {fileID: 0}
     - target: {fileID: 5931547165079564711, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 88.2585
       objectReference: {fileID: 0}
     - target: {fileID: 5931547165079564711, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
       propertyPath: m_LocalScale.x
@@ -449,8 +449,56 @@ PrefabInstance:
       value: 0.68659
       objectReference: {fileID: 0}
     - target: {fileID: 5931547165079564711, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0000076294
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931547165079564711, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -94
+      value: -98
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931547165116803520, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
+      propertyPath: m_text
+      value: SpaceWord Odyssey
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931547165116803520, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931547165116803520, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.22614042
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931547165116803520, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.050943315
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931547165116803520, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931547165116803520, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931547165116803520, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4281994751
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931547165116803521, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 574.5518
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931547165116803521, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 166.0079
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931547165116803521, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000015259
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931547165116803521, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 54
       objectReference: {fileID: 0}
     - target: {fileID: 5931547165116803526, guid: 0d2a73218d23cf549b280f6d68581752, type: 3}
       propertyPath: m_Name
