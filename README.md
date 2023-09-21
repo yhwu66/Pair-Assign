@@ -1,3 +1,2 @@
-# Pair-Assignment
-This is a pair group assignment for CSCI-526 Fall 2023
-SpaceWord Odyssey 
+# Pair-Assign
+This is a pair assignment for csci-526 23fall
