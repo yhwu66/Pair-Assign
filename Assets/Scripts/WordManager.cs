@@ -58,8 +58,11 @@ public class WordManager : MonoBehaviour
             
             return true;
         }
+        else
+        {
+            return false;
+        }
         
-        return false;
     }
 
     private void HandleWordCompletion()
