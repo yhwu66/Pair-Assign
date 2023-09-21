@@ -47,7 +47,7 @@ public class WordManager : MonoBehaviour
     {
         if (currentWordSet.Contains(letter))
         {
-            popupController.ShowPopupMessage("Success!");
+            
             currentWordSet.Remove(letter);
             if (currentWordSet.Count == 0)
             {
@@ -58,7 +58,7 @@ public class WordManager : MonoBehaviour
             
             return true;
         }
-        popupController.ShowPopupMessage("Not in current word!");
+        
         return false;
     }
 
@@ -66,7 +66,7 @@ public class WordManager : MonoBehaviour
     {
         Debug.Log("Word Completed: " + words[currentWordIndex]);
         currentWordIndex++;
-        popupController.ShowPopupMessage(words[currentWordIndex-1] + " completed!");
+        popupController.ShowPopupMessgaeCompleted(words[currentWordIndex-1] + " completed!");
         
 
         // Check if we have more words
