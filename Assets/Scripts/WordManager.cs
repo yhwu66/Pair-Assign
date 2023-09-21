@@ -1,6 +1,6 @@
-using System;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class WordManager : MonoBehaviour
@@ -13,15 +13,16 @@ public class WordManager : MonoBehaviour
 
     private HashSet<char> currentWordSet;
     private float startTime;
+    private float finishTime = 0f;
 
     public void Start()
     {
         Debug.Log("Current word: " +  words[0]);
         currentWordSet = new HashSet<char>(words[0]);
         displayTextCurrentWord.text = "Current Word is: "+ "'" + words[0] + "'";
-        //displayTextWin.text = "You Win!";
+        displayTextWin.text = "You Win!";
         displayTextWin.enabled = false;
-        displayTextTimer.enabled = false;
+        //displayTextTimer.enabled = false;
         startTime = Time.time;
         
     }
@@ -30,7 +31,7 @@ public class WordManager : MonoBehaviour
     {
         float t = Time.time - startTime;
         string seconds = (t % 60).ToString("f2");
-        //displayTextTimer.text = "Time: " + seconds + "s";
+        displayTextTimer.text = "Time: " + seconds + "s";
     }
 
 
@@ -70,7 +71,16 @@ public class WordManager : MonoBehaviour
         else
         {
             Debug.Log("All words completed! You win!");
-            //displayTextWin.enabled = true;
+            displayTextWin.enabled = true;
+            finishTime = Time.time - startTime;
+            string seconds = (finishTime % 60).ToString("f2");
+            
+            if (DataManagerSingleton.Instance != null)
+            {
+                DataManagerSingleton.Instance.SetFinalTime(seconds);
+            }
+            
+            SceneManager.LoadScene("GameOver");
         }
     }
     
