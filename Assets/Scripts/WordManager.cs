@@ -10,20 +10,23 @@ public class WordManager : MonoBehaviour
     public Text displayTextCurrentWord;
     public Text displayTextTimer;
     public Text displayTextWin;
+    public TextPopupController popupController;
 
     private HashSet<char> currentWordSet;
     private float startTime;
     private float finishTime = 0f;
+    private List<string> completedWords = new List<string>();
 
     public void Start()
     {
         Debug.Log("Current word: " +  words[0]);
         currentWordSet = new HashSet<char>(words[0]);
-        displayTextCurrentWord.text = "Current Word is: "+ "'" + words[0] + "'";
+        displayTextCurrentWord.text = "Completed Words : ";
         displayTextWin.text = "You Win!";
         displayTextWin.enabled = false;
         //displayTextTimer.enabled = false;
         startTime = Time.time;
+        
         
     }
 
@@ -42,17 +45,20 @@ public class WordManager : MonoBehaviour
     
     public bool IsValidLetterHit(char letter)
     {
-
         if (currentWordSet.Contains(letter))
         {
+            popupController.ShowPopupMessage("Success!");
             currentWordSet.Remove(letter);
             if (currentWordSet.Count == 0)
             {
                 HandleWordCompletion();
+                completedWords.Add(words[currentWordIndex-1]);
+                displayTextCurrentWord.text += words[currentWordIndex-1] + " ";
             }
+            
             return true;
         }
-        
+        popupController.ShowPopupMessage("Not in current word!");
         return false;
     }
 
@@ -60,13 +66,13 @@ public class WordManager : MonoBehaviour
     {
         Debug.Log("Word Completed: " + words[currentWordIndex]);
         currentWordIndex++;
+        popupController.ShowPopupMessage(words[currentWordIndex-1] + " completed!");
         
 
         // Check if we have more words
         if (currentWordIndex < words.Count){
             Debug.Log("Current word: " +  words[currentWordIndex]);
             currentWordSet = new HashSet<char>(words[currentWordIndex]);
-            displayTextCurrentWord.text = "Current Word is: "+ "'" + words[currentWordIndex] + "'";
         }
         else
         {

@@ -254,6 +254,7 @@ MonoBehaviour:
   displayTextCurrentWord: {fileID: 40751464}
   displayTextTimer: {fileID: 458295891}
   displayTextWin: {fileID: 2135194583}
+  popupController: {fileID: 1180687428}
 --- !u!1 &57778049
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,10 +727,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1180687426}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d60447a3d8a14153bd35aeb866d9e8d, type: 3}
+  m_Script: {fileID: 11500000, guid: 5325585fea0c0499c826d6f9cf0bd6de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayText: {fileID: 0}
+  popupText: {fileID: 2135194583}
+  displayDuration: 1
 --- !u!1 &1202548069 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4234507550844520247, guid: 913423cb1be2740a48a92ab8ff86e6d1, type: 3}
@@ -5976,7 +5978,7 @@ RectTransform:
   m_GameObject: {fileID: 2135194581}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.3511, y: 3.3511, z: 3.3511}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1409183575}
@@ -5984,8 +5986,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 136, y: -5}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 4, y: -4}
+  m_SizeDelta: {x: 500, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2135194583
 MonoBehaviour:
@@ -6009,18 +6011,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 23
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You Win!
+  m_Text: 
 --- !u!222 &2135194584
 CanvasRenderer:
   m_ObjectHideFlags: 0
